@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+  <nav id="navigation" role="navigation" class="navigation">
+    <a href="http://www.alsacreations.com/">Picon bière</a>
+    <a href="https://www.goetter.fr">Melfor</a>
+    <a href="http://www.alsacreations.com/">Carola</a>
+    <a href="https://www.goetter.fr">Wurscht</a>
+    <a href="http://www.alsacreations.com/">Choucroute</a>
+    <a href="https://www.goetter.fr">Knacks</a>
+  </nav>
+  
+  <div class="main" role="main">
+    <button class="nav-button" role="button" type="button" aria-label="navigation"></button>
+    
+    <h1>Navigation "push left JS"</h1>
+    <p>Navigation mobile-first "Push Left" librement inspiré du code du livre <a href="">Responsive Design Patterns</a> de Ethan Marcotte</p>
+    <ul>
+      <li>JavaScript pour le comportement "touch" et la génération du bouton de menu</li>
+      <li>CSS pour les styles et les transitions</li>
+    </ul>
+    <p>Le principe général est celui-ci :</p>
+    <ul>
+      <li>Si JavaScript n'est pas activé ou si le navigateur est ancien, la navigation s'affiche simplement dans le flux, de façon accessible</li>
+      <li>Sur petit écran (maxi 544px), "main" s'affiche par dessus "navigation" et le bouton de navigation "nav-button" apparaît. <br>JavaScript s'occupe de l'action "touch" en ajoutant/retirant la classe ".is-opened" sur "main".</li>
+      <li>Sur grand écran (mini 545px), "navigation" est simplement placée dans le flux en haut de "main".</li>
+    </ul>
+    <p>Lorem Elsass ipsum réchime amet non Choucroute knack tchao bissame hopla. Wotch a kofee avec ton BibalaekaesSalat et ta wurscht ?</p>
+    <p>Yeuh non che suis au réchime, je ne mange plus que des Grumbeere light et che fais de la chym avec Chulien. Tiens, un Picon sur le comptoir.</p>
+    <p>Allez tchao bissame !</p>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
